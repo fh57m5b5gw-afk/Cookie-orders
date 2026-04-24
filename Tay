@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Luxury Cookie Orders</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0b1f3a, #020c1b);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Floating cookies */
+.cookie {
+  position: fixed;
+  width: 60px;
+  animation: float 10s infinite linear;
+  opacity: 0.2;
+}
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); }
+  100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
+/* Card */
+.container {
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(19, 47, 92, 0.85);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 0 25px rgba(77,166,255,0.5);
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+h1 {
+  color: #4da6ff;
+  text-shadow: 0 0 10px #4da6ff;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Inputs */
+input, select {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Glow button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #4da6ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #4da6ff, 0 0 20px #4da6ff;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #4da6ff, 0 0 40px #4da6ff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating cookie images -->
+<img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" class="cookie" style="left:10%; animation-duration:12s;">
+<img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" class="cookie" style="left:50%; animation-duration:15s;">
+<img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" class="cookie" style="left:80%; animation-duration:10s;">
+
+<div class="container">
+<h1>🍪 Luxury Cookies</h1>
+
+<p><b>Preorders are being taken</b></p>
+<p>📍 Only at Ashley Ridge</p>
+<p>📅 Selling this Friday</p>
+<p>$3 each</p>
+<p>Cash & Cash App (Taywkeyfr)</p>
+
+<form action="https://formspree.io/f/xjgjpnez" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<select name="flavor" required>
+<option value="">Choose Flavor</option>
+<option>Red Velvet Oreo</option>
+<option>Cookies & Cream</option>
+</select>
+
+<input type="number" name="quantity" placeholder="Quantity" required>
+
+<select name="payment">
+<option>Cash</option>
+<option>Cash App (Taywkeyfr)</option>
+</select>
+
+<button type="submit">Place Order</button>
+
+</form>
+</div>
+
+</body>
+</html>
