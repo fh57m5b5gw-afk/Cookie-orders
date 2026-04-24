@@ -109,7 +109,9 @@ button:hover {
 <option>Cookies & Cream</option>
 </select>
 
-<input type="number" name="quantity" placeholder="Quantity" required>
+<input type="number" id="quantity" name="quantity" placeholder="Quantity" required oninput="updateTotal()">
+
+<p id="totalPrice" style="font-weight:bold; color:#4da6ff;">Total: $0</p>
 
 <select name="payment">
 <option>Cash</option>
