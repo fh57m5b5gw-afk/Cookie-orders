@@ -122,4 +122,159 @@ button:hover {
 </div>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Luxury Cookie Orders</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0b1f3a, #020c1b);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: #4da6ff;
+  text-shadow: 0 0 10px #4da6ff;
+  margin-top: 30px;
+}
+
+/* Menu Section */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(19,47,92,0.85);
+  border-radius: 15px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(77,166,255,0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Order box */
+.container {
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(19, 47, 92, 0.9);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 25px rgba(77,166,255,0.5);
+}
+
+/* Inputs */
+input, select {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Glow button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #4da6ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #4da6ff, 0 0 20px #4da6ff;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #4da6ff, 0 0 40px #4da6ff;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🍪 Luxury Cookies</h1>
+
+<p><b>Preorders are being taken</b></p>
+<p>📍 Only at Ashley Ridge</p>
+<p>📅 Selling this Friday</p>
+<p>$3 each | Cash & Cash App (Taywkeyfr)</p>
+
+<!-- MENU -->
+<div class="menu">
+
+  <div class="card">
+    <img src="YOUR-IMAGE-1">
+    <h3>Cookies & Cream</h3>
+  </div>
+
+  <div class="card">
+    <img src="YOUR-IMAGE-2">
+    <h3>Classic Chocolate Chip</h3>
+  </div>
+
+  <div class="card">
+    <img src="YOUR-IMAGE-3">
+    <h3>Specialty Cookie</h3>
+  </div>
+
+  <div class="card">
+    <img src="YOUR-IMAGE-4">
+    <h3>Cookies & Cream Deluxe</h3>
+  </div>
+
+  <div class="card">
+    <img src="YOUR-IMAGE-5">
+    <h3>Red Velvet Oreo</h3>
+  </div>
+
+</div>
+
+<!-- ORDER FORM -->
+<div class="container">
+
+<form action="https://formspree.io/f/xjgjpnez" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<select name="flavor" required>
+<option value="">Choose Flavor</option>
+<option>Cookies & Cream</option>
+<option>Red Velvet Oreo</option>
+</select>
+
+<input type="number" name="quantity" placeholder="Quantity" required>
+
+<select name="payment">
+<option>Cash</option>
+<option>Cash App (Taywkeyfr)</option>
+</select>
+
+<button type="submit">Place Order</button>
+
+</form>
+
+</div>
+
+</body>
 </html>
